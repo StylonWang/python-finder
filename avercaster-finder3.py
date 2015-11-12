@@ -65,11 +65,11 @@ while True:
         data = json.loads(msg[0])
         command = data["command"]
     except (ValueError, KeyError, TypeError):
-        #print "JSON format error"
+        #print "JSON format error: command"
         continue
 
     if not command == "browse_response" :
-        print "skip non-browse-response"
+        print "skip non-browse-response", command
         continue
         
     device = { 'msg': '', 'ip1': '0.0.0.0', 'ip2': '0.0.0.0',
@@ -84,7 +84,7 @@ while True:
         device['mac1'] = data['nic'][0]['id']
         device['name'] = data['device_name']
     except (ValueError, KeyError, TypeError):
-        print "JSON format error"
+        print "JSON format error: other"
         continue
 
     #print "Add ", device['ip1']
