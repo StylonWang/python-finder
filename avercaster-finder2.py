@@ -112,6 +112,7 @@ for key in avercasters :
 print
 print "Found", len(avercasters), "products"
 for key in avercasters :
+    print
     print "Model:", avercasters[key]['model']
     print "IP:", avercasters[key]['ip1']
     print "MAC 1:", avercasters[key]['mac1']
