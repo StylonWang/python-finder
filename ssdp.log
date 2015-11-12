@@ -1,0 +1,581 @@
+M-SEARCH * HTTP/1.1
+HOST: 239.255.255.250:1900
+MAN: "ssdp:discover"
+MX: 1
+ST: urn:dial-multiscreen-org:service:dial:1
+USER-AGENT: Google Chrome/46.0.2490.71 Windows
+
+
+M-SEARCH * HTTP/1.1
+HOST: 239.255.255.250:1900
+MAN: "ssdp:discover"
+MX: 1
+ST: urn:dial-multiscreen-org:service:dial:1
+USER-AGENT: Google Chrome/46.0.2490.71 Windows
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:46 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:service:ConnectionManager:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:service:ConnectionManager:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:47 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:device:MediaServer:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:device:MediaServer:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:47 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a
+CACHE-CONTROL: max-age=300
+NT: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:47 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1
+CACHE-CONTROL: max-age=300
+NT: urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:48 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1
+CACHE-CONTROL: max-age=300
+NT: urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:48 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-cyberlink-com:service:RemoteControl:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-cyberlink-com:service:RemoteControl:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:48 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-cyberlink-com:service:SyncControl:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-cyberlink-com:service:SyncControl:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:48 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:service:ContentDirectory:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:service:ContentDirectory:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:49 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::upnp:rootdevice
+CACHE-CONTROL: max-age=300
+NT: upnp:rootdevice
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:49 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:service:ConnectionManager:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:service:ConnectionManager:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:50 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a
+CACHE-CONTROL: max-age=300
+NT: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:50 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:device:MediaServer:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:device:MediaServer:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:50 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-cyberlink-com:service:RemoteControl:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-cyberlink-com:service:RemoteControl:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:50 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:service:ContentDirectory:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:service:ContentDirectory:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:50 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-cyberlink-com:service:SyncControl:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-cyberlink-com:service:SyncControl:1
+
+
+M-SEARCH * HTTP/1.1
+Host:239.255.255.250:1900
+ST:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+Man:"ssdp:discover"
+MX:3
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:51 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::upnp:rootdevice
+CACHE-CONTROL: max-age=300
+NT: upnp:rootdevice
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.8:80/devicelist.xml
+Server: AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:homefree:2
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:homefree:2
+NTS: ssdp:alive
+
+
+M-SEARCH * HTTP/1.1
+Host:239.255.255.250:1900
+ST:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+Man:"ssdp:discover"
+MX:3
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.81:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.81:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.81:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:56 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:service:ConnectionManager:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:service:ConnectionManager:1
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.227:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.227:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.227:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:57 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:device:MediaServer:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:device:MediaServer:1
+
+
+M-SEARCH * HTTP/1.1
+Host:239.255.255.250:1900
+ST:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+Man:"ssdp:discover"
+MX:3
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:57 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a
+CACHE-CONTROL: max-age=300
+NT: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:57 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1
+CACHE-CONTROL: max-age=300
+NT: urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:58 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1
+CACHE-CONTROL: max-age=300
+NT: urn:microsoft.com:service:X_MS_MediaReceiverRegistrar:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:58 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-cyberlink-com:service:RemoteControl:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-cyberlink-com:service:RemoteControl:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:58 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-cyberlink-com:service:SyncControl:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-cyberlink-com:service:SyncControl:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:59 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:service:ContentDirectory:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:service:ContentDirectory:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:59 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::upnp:rootdevice
+CACHE-CONTROL: max-age=300
+NT: upnp:rootdevice
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:8:59 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:service:ConnectionManager:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:service:ConnectionManager:1
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.81:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.81:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.81:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+M-SEARCH * HTTP/1.1
+Host:239.255.255.250:1900
+ST:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+Man:"ssdp:discover"
+MX:3
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:9:0 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a
+CACHE-CONTROL: max-age=300
+NT: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:9:0 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:device:MediaServer:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:device:MediaServer:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:9:0 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-cyberlink-com:service:RemoteControl:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-cyberlink-com:service:RemoteControl:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:9:0 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:service:ContentDirectory:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:service:ContentDirectory:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:9:0 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-cyberlink-com:service:SyncControl:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-cyberlink-com:service:SyncControl:1
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:9:1 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::upnp:rootdevice
+CACHE-CONTROL: max-age=300
+NT: upnp:rootdevice
+
+
+M-SEARCH * HTTP/1.1
+Host:239.255.255.250:1900
+ST:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+Man:"ssdp:discover"
+MX:3
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.81:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.81:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.81:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.227:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.227:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.227:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+M-SEARCH * HTTP/1.1
+Host:239.255.255.250:1900
+ST:urn:schemas-upnp-org:device:InternetGatewayDevice:1
+Man:"ssdp:discover"
+MX:3
+
+
+NOTIFY * HTTP/1.1
+LOCATION: http://10.1.9.97:52530/
+DATE: Thu, 12 Nov 2015 1:9:6 GMT
+HOST: 239.255.255.250:1900
+SERVER: WINDOWS, UPnP/1.0, Intel MicroStack/1.0.1497
+NTS: ssdp:alive
+USN: uuid:b76a6f87-1124-1ddd-4912-8da59c32e16a::urn:schemas-upnp-org:service:ConnectionManager:1
+CACHE-CONTROL: max-age=300
+NT: urn:schemas-upnp-org:service:ConnectionManager:1
+
+

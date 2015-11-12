@@ -1,0 +1,120 @@
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
+NOTIFY * HTTP/1.1
+Host: 239.255.255.250:1900
+Cache-Control: max-age=120
+Location: http://10.1.9.59:80/cgi-bin/gethwinfo
+Server: Linux UPnP/1.0 AVerUPnP/1.0
+NT: urn:schemas-avermedia-com:avercaster:1
+USN: uuid:00000000-0000-0000-0000-000000000000::urn:schemas-avermedia-com:avercaster:1
+NTS: ssdp:alive
+
+
