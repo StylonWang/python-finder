@@ -16,6 +16,8 @@ sock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
 while True:
     #print sock.recv(1024)
     msg = sock.recvfrom(1024)
+    print "[Message:]"
     print msg[0]
+    print "[Address]"
     print msg[1][0]
     print "\n"
