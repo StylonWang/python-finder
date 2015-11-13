@@ -11,16 +11,47 @@ import time
 import urllib2, urllib
 import xml.etree.ElementTree as ET
 import select
+import get_ip_address
+import getopt, sys
+import os
 
 MCAST_GRP = '239.255.255.250'
 MCAST_PORT = 1900
 MSG = "M-SEARCH * HTTP/1.1\r\nST: urn:schemas-avermedia-com:avercaster:1\r\nMX: 10\r\nMAN: \"ssdp:discover\"\r\nHOST: 239.255.255.250:1900\r\n\r\n"
-TIME_OUT = 2
+TIME_OUT = 5
+INTERFACE = "eth0"
+
+def usage():
+    print
+    print "[-h]             print this help message"
+    print "[-i interface]   select network interface, default", INTERFACE
+    print
+
+# parse command-line options
+try:  
+    opts, args = getopt.getopt(sys.argv[1:], "hi:", [])  
+except getopt.GetoptError:  
+    print "failed parsing options"
+    exit()
+
+for o, a in opts: 
+    if o in ("-h"):
+        usage()
+        exit()
+    if o in ("-i"):
+        INTERFACE = a
+
+local_ip = get_ip_address.get_ip_address(INTERFACE)
+print "Use local interface:", local_ip
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
 sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 sock.setsockopt(socket.IPPROTO_IP, socket.IP_MULTICAST_TTL, 32)
 sock.setblocking(0)
+sock.bind( (local_ip, 0) )
+
+mreq = struct.pack("4sl", socket.inet_aton(MCAST_GRP), socket.INADDR_ANY)
+sock.setsockopt(socket.IPPROTO_IP, socket.IP_ADD_MEMBERSHIP, mreq)
 
 avercasters = {}
 start_time = time.time()
@@ -37,6 +68,9 @@ while True:
         break
     ready = select.select([sock], [], [], 1);
     if not ready[0] :
+        # send M-SEARCH
+        print "Searching..."
+        sock.sendto(MSG, (MCAST_GRP, MCAST_PORT))
         continue
 
     # receive messages
@@ -78,8 +112,12 @@ for key in avercasters :
 
     print "checking URL: ", m.group(1)
     
+    # don't use proxy. 
+    os.environ['http_proxy'] = ''
+    os.environ['htts_proxy'] = ''
+    # TODO: don't use proxy. set timeout
     try:
-        info = urllib2.urlopen(m.group(1)).read()
+        info = urllib2.urlopen(m.group(1), None, 8).read()
         #print info
     except urllib2.URLError:
         print "Unable to connect to ", m.group(1)
