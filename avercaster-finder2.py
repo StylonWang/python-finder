@@ -24,7 +24,7 @@ INTERFACE = "eth0"
 def usage():
     print
     print "[-h]             print this help message"
-    print "[-i interface]   select network interface, default", INTERFACE
+    print "[-i interface-ip]   select network interface, default", INTERFACE
     print
 
 # parse command-line options
@@ -41,7 +41,8 @@ for o, a in opts:
     if o in ("-i"):
         INTERFACE = a
 
-local_ip = get_ip_address.get_ip_address(INTERFACE)
+#local_ip = get_ip_address.get_ip_address(INTERFACE)
+local_ip = INTERFACE
 print "Use local interface:", local_ip
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
