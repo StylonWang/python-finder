@@ -1,3 +1,5 @@
+#
+#
 
 import socket
 import struct
@@ -42,7 +44,7 @@ def finder2_find_product():
         ready = select.select([sock], [], [], 1);
         if not ready[0] :
             # send M-SEARCH
-#            print "Searching..."
+            print "Searching..."
             sock.sendto(MSG, (MCAST_GRP, MCAST_PORT))
             continue
 
@@ -56,7 +58,7 @@ def finder2_find_product():
             continue # not a successfull HTTP reply
 
         if not re.search("ST: urn:schemas-avermedia-com:avercaster:1", msg[0]) :
-#            print "not AVerCaster"
+            print "not AVerCaster"
             #print msg[0]
             continue # not a AVerCaster SSDP NOTIFY message, skip
 
@@ -69,21 +71,22 @@ def finder2_find_product():
 
         avercasters[msg[1][0]] = device; # insert by IP address
 
-        #print "[Message]: "
-        #print msg[0]
+#        print "[Message]: "
+        print msg[1][0]
+        print msg[0]
 
-#    print "Collection done, start querying"
+    print "Collection done, start querying"
 
     #print avercasters
     for key in avercasters :
-        #print avercasters[key]['ip1']
-        #print avercasters[key]['msg']
+        print avercasters[key]['ip1']
+        print avercasters[key]['msg']
         m = re.search("Location: (.*)", avercasters[key]['msg'])
         if not m :
-#            print "Cannot find location of key: ", key
+            print "Cannot find location of key: ", key
             continue
 
-#        print "checking URL: ", m.group(1)
+        print "checking URL: ", m.group(1)
         
         # don't use proxy. 
         os.environ['http_proxy'] = ''
@@ -120,8 +123,6 @@ def finder2_find_product():
         except AttributeError:
             print "cannot find fw_ver tag"
 
-
-        return avercasters
 #    print
 #    print "Found", len(avercasters), "products"
 #    for key in avercasters :
@@ -130,6 +131,8 @@ def finder2_find_product():
 #        print "IP:", avercasters[key]['ip1']
 #        print "MAC 1:", avercasters[key]['mac1']
 #        print "MAC 2:", avercasters[key]['mac2']
+
+    return avercasters
 
 
 def finder3_find_product():

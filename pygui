@@ -1,10 +1,11 @@
 #!/usr/bin/pythonw
 
-VERSION="0.9"
+VERSION="0.10"
 
 #from Tkinter import *
 import tkMessageBox
 import Tkinter
+import ttk
 import platform
 from avc_finder.finder import *
 
@@ -35,29 +36,57 @@ else:
     app.activateWithOptions_(NSApplicationActivateIgnoringOtherApps)
 
 def searchCallBack():
-    Lb1.delete(0, Tkinter.END)
-    Lb1.insert(Tkinter.END, "Now searching...")
+#    Lb1.delete(0, Tkinter.END)
+#    Lb1.insert(Tkinter.END, "Now searching...")
 
     devices3 = finder3_find_product()
     devices2 = finder2_find_product()
-    Lb1.delete(0, Tkinter.END)
+
+    # clean up all items
+#    Lb1.delete(0, Tkinter.END)
+    tv.delete(*tv.get_children())
 
     for ip in devices3:
-        Lb1.insert(Tkinter.END, devices3[ip]['model'] + " " + ip + " " + 
-              devices3[ip]['mac1'] + " " + devices3[ip]['version'])
+#        Lb1.insert(Tkinter.END, devices3[ip]['model'] + " " + ip + " " + 
+#              devices3[ip]['mac1'] + " " + devices3[ip]['version'])
+        tv.insert("", "end", devices3[ip]['mac1'], text=devices3[ip]['model'], 
+                values=(ip, devices3[ip]['mac1'], devices3[ip]['version']
+                   ))
+        print "Add:", devices3[ip]['model'], ip, devices3[ip]['mac1'], devices3[ip]['version']
+
 
     for ip in devices2:
-        Lb1.insert(Tkinter.END, devices2[ip]['model'] + " " + ip + " " + 
-              devices2[ip]['mac1'] + " " + devices2[ip]['version'])
+#        Lb1.insert(Tkinter.END, devices2[ip]['model'] + " " + ip + " " + 
+#              devices2[ip]['mac1'] + " " + devices2[ip]['version'])
+        tv.insert("", "end", devices2[ip]['mac1'], text=devices2[ip]['model'], 
+                values=(ip, devices2[ip]['mac1'], devices2[ip]['version']
+                    ))
+        print "Add:", devices2[ip]['model'], ip, devices2[ip]['mac1'], devices2[ip]['version']
 
 B = Tkinter.Button(top, text ="Search", command = searchCallBack)
 B.pack()
 
-Lb1 = Tkinter.Listbox(top)
-Lb1.insert(1, "Click \"Search\" to find AVerCaster products on LAN")
+#Lb1 = Tkinter.Listbox(top)
+#Lb1.insert(1, "Click \"Search\" to find AVerCaster products on LAN")
 
 #Lb1.pack(fill=BOTH)
-Lb1.pack(expand=1,  fill=Tkinter.BOTH)
+#Lb1.pack(expand=1,  fill=Tkinter.BOTH)
+
+tv = ttk.Treeview(top)
+tv["columns"] = ("IP", "MAC", "Firmware version")
+tv.heading("#0", text="Model")
+tv.column("#0", anchor="w", width=50)
+
+tv.heading("IP", text="IP")
+tv.column("IP", anchor="center", width=100)
+
+tv.heading("MAC", text="MAC")
+tv.column("MAC", anchor="center", width=100)
+
+tv.heading("Firmware version", text="F/W version")
+tv.column("Firmware version", anchor="center", width=100)
+
+tv.pack(expand=1, fill=Tkinter.BOTH)
 
 top.mainloop()
 
