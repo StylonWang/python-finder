@@ -31,7 +31,7 @@ def finder2_find_product():
     MCAST_GRP = '239.255.255.250'
     MCAST_PORT = 1900
     MSG = "M-SEARCH * HTTP/1.1\r\nST: urn:schemas-avermedia-com:avercaster:1\r\nMX: 10\r\nMAN: \"ssdp:discover\"\r\nHOST: 239.255.255.250:1900\r\n\r\n"
-    TIME_OUT = 5
+    TIME_OUT = 2
 
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -151,13 +151,18 @@ def finder2_find_product():
 
     return avercasters
 
+def id_to_mac(id):
+        id = id.upper()
+        return id[0] + id[1] + ":" + id[2] + id[3] + ":" + \
+               id[4] + id[5] + ":" + id[6] + id[7] + ":" + \
+               id[8] + id[9] + ":" + id[10] + id[11]
 
 def finder3_find_product():
     
     MCAST_GRP = '234.8.8.8'
     MCAST_PORT = 8888
     MSG = "{\n\"Command\":\"browse\"\n}"
-    TIME_OUT = 3
+    TIME_OUT = 2
 
     # set up sender socket
     ssock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM, socket.IPPROTO_UDP)
@@ -223,7 +228,7 @@ def finder3_find_product():
             device['ip1'] = msg[1][0]
             device['model'] = data['model']
             device['version'] = data['master_version']
-            device['mac1'] = data['nic'][0]['id']
+            device['mac1'] = id_to_mac(data['nic'][0]['id'])
             device['name'] = data['device_name']
         except (ValueError, KeyError, TypeError):
             #print "JSON format error: other"

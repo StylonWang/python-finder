@@ -1,6 +1,6 @@
 #!/usr/bin/pythonw
 
-VERSION="0.10"
+VERSION="0.11"
 
 #from Tkinter import *
 import tkMessageBox
@@ -11,7 +11,7 @@ from avc_finder.finder import *
 
 top = Tkinter.Tk()
 top.title("AVerCaster Finder v" + VERSION)
-w = 370
+w = 420
 h = 450
 # get screen width and height
 ws = top.winfo_screenwidth() # width of the screen
@@ -36,15 +36,12 @@ else:
     app.activateWithOptions_(NSApplicationActivateIgnoringOtherApps)
 
 def searchCallBack():
-#    Lb1.delete(0, Tkinter.END)
-#    Lb1.insert(Tkinter.END, "Now searching...")
-
-    devices3 = finder3_find_product()
-    devices2 = finder2_find_product()
 
     # clean up all items
 #    Lb1.delete(0, Tkinter.END)
     tv.delete(*tv.get_children())
+
+    devices3 = finder3_find_product()
 
     for ip in devices3:
 #        Lb1.insert(Tkinter.END, devices3[ip]['model'] + " " + ip + " " + 
@@ -54,6 +51,8 @@ def searchCallBack():
                    ))
         print "Add:", devices3[ip]['model'], ip, devices3[ip]['mac1'], devices3[ip]['version']
 
+
+    devices2 = finder2_find_product()
 
     for ip in devices2:
 #        Lb1.insert(Tkinter.END, devices2[ip]['model'] + " " + ip + " " + 
@@ -78,13 +77,13 @@ tv.heading("#0", text="Model")
 tv.column("#0", anchor="w", width=70)
 
 tv.heading("IP", text="IP")
-tv.column("IP", anchor="center", width=100)
+tv.column("IP", anchor="w", width=100)
 
 tv.heading("MAC", text="MAC")
-tv.column("MAC", anchor="center", width=100)
+tv.column("MAC", anchor="w", width=150)
 
 tv.heading("Firmware version", text="F/W version")
-tv.column("Firmware version", anchor="center", width=100)
+tv.column("Firmware version", anchor="w", width=100)
 
 tv.pack(expand=1, fill=Tkinter.BOTH)
 
