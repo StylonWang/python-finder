@@ -12,6 +12,20 @@ import xml.etree.ElementTree as ET
 import getopt, sys
 import os
 
+def is_f239_plus(version):
+        m = re.search("([0-9]*)\.([0-9]*)\.([0-9]*)", version)
+        if not m :
+            print "cannot parse version", version
+            return 0
+
+        version_number = m.group(1)*10000 + m.group(2)*100 + m.group(3)
+        # if version is 1.5 and before, it is F239
+        # otherwise, it is F239+
+        if version_number >= 100600 :
+            return 1
+        else :
+            return 0
+
 def finder2_find_product():
 
     MCAST_GRP = '239.255.255.250'
@@ -122,6 +136,9 @@ def finder2_find_product():
             avercasters[key]['version'] = root.find('fw_ver').text
         except AttributeError:
             print "cannot find fw_ver tag"
+
+        if avercasters[key]['model'] == 'F239' and is_f239_plus(avercasters[key]['version']) :
+            avercasters[key]['model'] = 'F239+'
 
 #    print
 #    print "Found", len(avercasters), "products"

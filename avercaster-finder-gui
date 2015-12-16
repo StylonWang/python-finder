@@ -11,7 +11,7 @@ from avc_finder.finder import *
 
 top = Tkinter.Tk()
 top.title("AVerCaster Finder v" + VERSION)
-w = 350
+w = 370
 h = 450
 # get screen width and height
 ws = top.winfo_screenwidth() # width of the screen
@@ -75,7 +75,7 @@ B.pack()
 tv = ttk.Treeview(top)
 tv["columns"] = ("IP", "MAC", "Firmware version")
 tv.heading("#0", text="Model")
-tv.column("#0", anchor="w", width=50)
+tv.column("#0", anchor="w", width=70)
 
 tv.heading("IP", text="IP")
 tv.column("IP", anchor="center", width=100)
