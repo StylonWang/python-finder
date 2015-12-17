@@ -104,7 +104,7 @@ def finder2_find_product():
         
         # don't use proxy. 
         os.environ['http_proxy'] = ''
-        os.environ['htts_proxy'] = ''
+        os.environ['https_proxy'] = ''
         # TODO: don't use proxy. set timeout
         try:
             info = urllib2.urlopen(m.group(1), None, 8).read()
