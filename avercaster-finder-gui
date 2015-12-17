@@ -1,4 +1,4 @@
-#!/usr/bin/pythonw
+#!/usr/bin/python
 
 VERSION="0.11"
 
@@ -26,9 +26,9 @@ top.lift()
 
 # bring window to front
 if platform.system() != 'Darwin':
-    root.lift()
-    root.call('wm', 'attributes', '.', '-topmost', True)
-    root.after_idle(root.call, 'wm', 'attributes', '.', '-topmost', False)
+    top.lift()
+    top.call('wm', 'attributes', '.', '-topmost', True)
+    top.after_idle(top.call, 'wm', 'attributes', '.', '-topmost', False)
 else:
     import os
     from Cocoa import NSRunningApplication, NSApplicationActivateIgnoringOtherApps
@@ -52,15 +52,15 @@ def searchCallBack():
         print "Add:", devices3[ip]['model'], ip, devices3[ip]['mac1'], devices3[ip]['version']
 
 
-    devices2 = finder2_find_product()
+#    devices2 = finder2_find_product()
 
-    for ip in devices2:
+#    for ip in devices2:
 #        Lb1.insert(Tkinter.END, devices2[ip]['model'] + " " + ip + " " + 
 #              devices2[ip]['mac1'] + " " + devices2[ip]['version'])
-        tv.insert("", "end", devices2[ip]['mac1'], text=devices2[ip]['model'], 
-                values=(ip, devices2[ip]['mac1'], devices2[ip]['version']
-                    ))
-        print "Add:", devices2[ip]['model'], ip, devices2[ip]['mac1'], devices2[ip]['version']
+#        tv.insert("", "end", devices2[ip]['mac1'], text=devices2[ip]['model'], 
+#                values=(ip, devices2[ip]['mac1'], devices2[ip]['version']
+#                    ))
+#        print "Add:", devices2[ip]['model'], ip, devices2[ip]['mac1'], devices2[ip]['version']
 
 B = Tkinter.Button(top, text ="Search", command = searchCallBack)
 B.pack()
