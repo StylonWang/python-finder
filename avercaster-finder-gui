@@ -26,9 +26,9 @@ top.lift()
 
 # bring window to front
 if platform.system() != 'Darwin':
-    root.lift()
-    root.call('wm', 'attributes', '.', '-topmost', True)
-    root.after_idle(root.call, 'wm', 'attributes', '.', '-topmost', False)
+    top.lift()
+    top.call('wm', 'attributes', '.', '-topmost', True)
+    top.after_idle(top.call, 'wm', 'attributes', '.', '-topmost', False)
 else:
     import os
     from Cocoa import NSRunningApplication, NSApplicationActivateIgnoringOtherApps
