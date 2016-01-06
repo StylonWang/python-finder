@@ -11,7 +11,7 @@ from avc_finder.finder import *
 
 top = Tkinter.Tk()
 top.title("AVerCaster Finder v" + VERSION)
-w = 420
+w = 430
 h = 450
 # get screen width and height
 ws = top.winfo_screenwidth() # width of the screen
@@ -82,7 +82,7 @@ tv.heading("#0", text="Model")
 tv.column("#0", anchor="w", width=70)
 
 tv.heading("IP", text="IP")
-tv.column("IP", anchor="w", width=100)
+tv.column("IP", anchor="w", width=110)
 
 tv.heading("MAC", text="MAC")
 tv.column("MAC", anchor="w", width=150)
