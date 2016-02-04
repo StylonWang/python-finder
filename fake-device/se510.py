@@ -1,8 +1,8 @@
 #!/usr/bin/python
-# This tool searches for AVerCaster series product in the local LAN,
-# by sending specialized multicast messages.
 #
-# Works for SE510.
+# Simulate a fake SE510 clients to receive and respond to search queries 
+# from multicast.
+#
 
 import socket
 import struct
